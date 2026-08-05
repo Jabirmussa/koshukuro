@@ -24,9 +24,13 @@ export function SignInScreen({ navigateTo }: { navigateTo: (screen: string) => v
 
     setLoading(true);
     try {
+      // Verifica se Google Play Services está disponível
       await GoogleSignin.hasPlayServices();
+      
+      // Realiza o login com Google
       const response = await GoogleSignin.signIn();
 
+      // Obtém o ID token do usuário
       const idToken = response.data?.idToken;
 
       if (!idToken) {
@@ -36,9 +40,16 @@ export function SignInScreen({ navigateTo }: { navigateTo: (screen: string) => v
       // Login com Google bem-sucedido
       // Aqui você pode adicionar lógica adicional para validar o token com seu backend
       console.log('Google Sign-In successful:', response.data?.user);
+      console.log('User info:', {
+        email: response.data?.user.email,
+        name: response.data?.user.name,
+        id: response.data?.user.id,
+      });
 
       navigateTo('home');
     } catch (error: any) {
+      console.error('Google Sign-In error:', error);
+      
       if (error.code === statusCodes.SIGN_IN_CANCELLED) {
         Alert.alert('Cancelado', 'Login com Google cancelado.');
       } else if (error.code === statusCodes.IN_PROGRESS) {
@@ -46,8 +57,7 @@ export function SignInScreen({ navigateTo }: { navigateTo: (screen: string) => v
       } else if (error.code === statusCodes.PLAY_SERVICES_NOT_AVAILABLE) {
         Alert.alert('Erro', 'Google Play Services não disponível ou desatualizado.');
       } else {
-        Alert.alert('Erro', 'Falha ao fazer login com Google.');
-        console.error(error);
+        Alert.alert('Erro', 'Falha ao fazer login com Google: ' + (error.message || 'Erro desconhecido'));
       }
     } finally {
       setLoading(false);
