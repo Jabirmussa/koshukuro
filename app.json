@@ -20,7 +20,7 @@
       "package": "com.jabirmussa.koshukuro",
       "config": {
         "googleMaps": {
-          "apiKey": "YOUR_GOOGLE_MAPS_API_KEY_HERE"
+          "apiKey": "AIzaSyAadHewh8gkTo3Rz3AQJMynXQQOBg4IUCE"
         }
       }
     },
@@ -32,7 +32,7 @@
       [
         "@react-native-google-signin/google-signin",
         {
-          "iosUrlScheme": "com.googleusercontent.apps.YOUR_IOS_URL_SCHEME_HERE"
+          "iosUrlScheme": "com.googleusercontent.apps.278987662574-2r6731ufovfnpf9u8tdd72fobacnucbo"
         }
       ],
       "expo-status-bar"

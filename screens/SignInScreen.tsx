@@ -14,7 +14,7 @@ export function SignInScreen({ navigateTo }: { navigateTo: (screen: string) => v
 
   useEffect(() => {
     GoogleSignin.configure({
-      webClientId: process.env.EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID || '',
+      webClientId: '278987662574-2r6731ufovfnpf9u8tdd72fobacnucbo.apps.googleusercontent.com',
       offlineAccess: true,
     });
   }, []);
