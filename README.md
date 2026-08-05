@@ -162,8 +162,23 @@ npm install
 
 3. **Configure as variáveis de ambiente**
 ```bash
-# Crie um arquivo .config com suas chaves de API
-# Consulte a seção de Configuração para detalhes
+# Crie um arquivo .env baseado no .env.example
+cp .env.example .env
+
+# Edite o arquivo .env com suas chaves de API
+# EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID=seu_client_id_aqui
+```
+
+4. **Configure Android SDK (Windows)**
+```bash
+# Defina as variáveis de ambiente do Android SDK
+# No PowerShell:
+$env:ANDROID_HOME = "C:\Users\SEU_USUARIO\AppData\Local\Android\Sdk"
+$env:ANDROID_SDK_ROOT = "C:\Users\SEU_USUARIO\AppData\Local\Android\Sdk"
+
+# Ou use os scripts fornecidos:
+# PowerShell: .\start.ps1
+# Batch: start.bat
 ```
 
 ### Execução
@@ -183,6 +198,15 @@ npm run ios      # Para iOS
 **Modo Web**
 ```bash
 npm run web
+```
+
+**Scripts de Inicialização**
+```bash
+# PowerShell (recomendado para Windows)
+.\start.ps1
+
+# Batch (alternativa para Windows)
+start.bat
 ```
 
 ---
