@@ -39,3 +39,9 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# sensitive files
+google-services.json
+eas.json
+*.pem
+*.key
