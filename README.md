@@ -261,28 +261,20 @@ Os arquivos sensíveis (chaves de API, arquivos de configuração do Firebase) e
 
 <div align="center">
 
-### Home Screen
+### Home Screen & Product Search
 <img src="assets/screenshots/Screenshot_1785929303.png" alt="Home Screen" width="300"/>
-
-### Product Search
 <img src="assets/screenshots/Screenshot_1785929324.png" alt="Product Search" width="300"/>
 
-### Map Screen
+### Map Screen & Price Comparison
 <img src="assets/screenshots/Screenshot_1785929333.png" alt="Map Screen" width="300"/>
-
-### Price Comparison
 <img src="assets/screenshots/Screenshot_1785929338.png" alt="Price Comparison" width="300"/>
 
-### Shopping List
+### Shopping List & Report Price
 <img src="assets/screenshots/Screenshot_1785929365.png" alt="Shopping List" width="300"/>
-
-### Report Price
 <img src="assets/screenshots/Screenshot_1785929402.png" alt="Report Price" width="300"/>
 
-### Profile Screen
+### Profile Screen & Sign In Screen
 <img src="assets/screenshots/Screenshot_1785929407.png" alt="Profile Screen" width="300"/>
-
-### Sign In Screen
 <img src="assets/screenshots/Screenshot_1785929412.png" alt="Sign In Screen" width="300"/>
 
 </div>
