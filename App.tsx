@@ -15,8 +15,10 @@ import { SignInScreen } from './screens/SignInScreen';
 import { ThemeProvider, useTheme } from './context/ThemeContext';
 import { GoogleSignin } from '@react-native-google-signin/google-signin';
 
+// Configure Google Sign-In com variáveis de ambiente
+// Adicione estas variáveis ao seu arquivo .env
 GoogleSignin.configure({
-  webClientId: '278987662574-2r6731ufovfnpf9u8tdd72fobacnucbo.apps.googleusercontent.com',
+  webClientId: process.env.EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID || '',
 });
 
 type ScreenName = 'splash' | 'signIn' | 'home' | 'productPrices' | 'productDetail' | 'reportPrice' | 'myReports' | 'map' | 'shoppingList' | 'comparePrices' | 'profile';

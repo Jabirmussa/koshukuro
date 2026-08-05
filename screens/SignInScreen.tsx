@@ -3,7 +3,6 @@ import { View, StyleSheet, Text, Alert, ActivityIndicator, TouchableOpacity, Pre
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Feather, Ionicons } from '@expo/vector-icons';
 import { GoogleSignin, statusCodes } from '@react-native-google-signin/google-signin';
-import { getAuth, GoogleAuthProvider, signInWithCredential } from '@react-native-firebase/auth';
 import { typography } from '../theme/typography';
 import { colors, radii, spacing } from '../theme/colors';
 import { useTheme } from '../context/ThemeContext';
@@ -15,7 +14,7 @@ export function SignInScreen({ navigateTo }: { navigateTo: (screen: string) => v
 
   useEffect(() => {
     GoogleSignin.configure({
-      webClientId: '278987662574-2r6731ufovfnpf9u8tdd72fobacnucbo.apps.googleusercontent.com',
+      webClientId: process.env.EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID || '',
       offlineAccess: true,
     });
   }, []);
@@ -34,11 +33,9 @@ export function SignInScreen({ navigateTo }: { navigateTo: (screen: string) => v
         throw new Error('Não foi possível obter o idToken do Google.');
       }
 
-      // Necessário também obter o accessToken separadamente
-      const { accessToken } = await GoogleSignin.getTokens();
-
-      const googleCredential = GoogleAuthProvider.credential(idToken, accessToken);
-      await signInWithCredential(getAuth(), googleCredential);
+      // Login com Google bem-sucedido
+      // Aqui você pode adicionar lógica adicional para validar o token com seu backend
+      console.log('Google Sign-In successful:', response.data?.user);
 
       navigateTo('home');
     } catch (error: any) {

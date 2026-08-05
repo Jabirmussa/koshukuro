@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="assets/koshukuro_logo.png" alt="Koshukuro Logo" width="200" height="auto"/>
+  <img src="assets/koshukuro_logo.png" alt="Koshukuro Logo" width="700" height="auto"/>
 
 </div>
 
@@ -21,29 +21,29 @@
 
 ---
 
-## 📋 Sobre o Projeto
+## Sobre o Projeto
 
 O **Koshukuro** é um aplicativo mobile desenvolvido com React Native e Expo que permite aos usuários comparar preços de produtos em diferentes supermercados, visualizar localizações em mapa interativo, criar listas de compras e reportar preços. O aplicativo integra autenticação Google, serviços de mapa e localização, proporcionando uma experiência completa de comparação de preços.
 
-### 🎯 Objetivo
+### Objetivo
 
 Facilitar a vida dos consumidores ao fornecer uma plataforma intuitiva para pesquisa e comparação de preços, ajudando a economizar dinheiro e tempo nas compras do dia a dia.
 
 ---
 
-## ✨ Funcionalidades
+## Funcionalidades
 
 ### 🔐 Autenticação
 - **Login com Google**: Integração segura com Google Sign-In
 - **Sessão Persistente**: Mantém o usuário autenticado entre sessões
 - **Splash Screen**: Experiência de carregamento profissional
 
-### 🏠 Home
+### Home
 - **Banner Carousel**: Apresentação visual de promoções e destaques
 - **Navegação Intuitiva**: Acesso rápido a todas as funcionalidades
 - **Design Responsivo**: Interface adaptável a diferentes tamanhos de tela
 
-### 📊 Comparação de Preços
+### Comparação de Preços
 - **Visualização de Preços**: Compara preços do mesmo produto em diferentes lojas
 - **Cards de Preço**: Componentes reutilizáveis para exibição de informações
 - **Detalhes do Produto**: Informações completas sobre cada item
@@ -53,28 +53,28 @@ Facilitar a vida dos consumidores ao fornecer uma plataforma intuitiva para pesq
 - **Integração Google Maps**: API de mapas robusta e precisa
 - **Localização do Usuário**: Serviços de geolocalização em tempo real
 
-### 📝 Lista de Compras
+### Lista de Compras
 - **Gerenciamento de Lista**: Adicione e remova itens da sua lista
 - **Organização**: Estrutura simples e eficiente para planejamento
 - **Persistência de Dados**: Mantém sua lista salva
 
-### 📢 Reportar Preços
+### Reportar Preços
 - **Contribuição Comunitária**: Usuários podem reportar preços encontrados
 - **Formulário Intuitivo**: Interface fácil para preenchimento de informações
 - **Validação de Dados**: Garantia de qualidade nas informações
 
-### 👤 Perfil
+### Perfil
 - **Gerenciamento de Conta**: Informações do usuário e configurações
 - **Personalização**: Opções de personalização da experiência
 
-### 🎨 Tema
+### Tema
 - **Suporte a Temas**: Sistema de tema claro/escuro
 - **Context API**: Gerenciamento de estado eficiente
 - **Paleta de Cores Personalizada**: Design system consistente
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 ### Frontend & Mobile
 - **React Native 0.86.0**: Framework principal para desenvolvimento mobile
@@ -104,7 +104,7 @@ Facilitar a vida dos consumidores ao fornecer uma plataforma intuitiva para pesq
 
 ---
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 koshukuro/
@@ -137,7 +137,7 @@ koshukuro/
 
 ---
 
-## 🚀 Como Instalar e Executar
+## Como Instalar e Executar
 
 ### Pré-requisitos
 
@@ -187,7 +187,7 @@ npm run web
 
 ---
 
-## ⚙️ Configuração
+## Configuração
 
 ### Variáveis de Ambiente
 
@@ -215,7 +215,7 @@ Os arquivos sensíveis (chaves de API, arquivos de configuração do Firebase) e
 
 ---
 
-## 🎨 Design System
+## Design System
 
 ### Cores
 - **Primary**: `#E6F4FE` (Azul claro)
@@ -233,7 +233,7 @@ Os arquivos sensíveis (chaves de API, arquivos de configuração do Firebase) e
 
 ---
 
-## 📱 Screenshots
+## Screenshots
 
 ### Home Screen
 [Adicione screenshot da Home Screen]
@@ -246,7 +246,7 @@ Os arquivos sensíveis (chaves de API, arquivos de configuração do Firebase) e
 
 ---
 
-## 🔮 Funcionalidades Futuras
+## Funcionalidades Futuras
 
 - [ ] Integração com API de preços em tempo real
 - [ ] Sistema de notificações para promoções
@@ -259,7 +259,7 @@ Os arquivos sensíveis (chaves de API, arquivos de configuração do Firebase) e
 
 ---
 
-## 🤝 Contribuindo
+## Contribuindo
 
 Contribuições são bem-vindas! Para contribuir:
 
@@ -277,22 +277,21 @@ Contribuições são bem-vindas! Para contribuir:
 
 ---
 
-## 📄 Licença
+## Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
 
 ---
 
-## 👨‍💻 Autor
+## Autor
 
 **Jabir Mussa**
 
 - GitHub: [@Jabirmussa](https://github.com/Jabirmussa)
-- LinkedIn: [Adicione seu LinkedIn]
 
 ---
 
-## 🙏 Agradecimentos
+## Agradecimentos
 
 - [Expo](https://expo.dev/) - Plataforma de desenvolvimento mobile
 - [React Native](https://reactnative.dev/) - Framework mobile
@@ -301,19 +300,10 @@ Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalh
 
 ---
 
-## 📞 Contato
-
-Se você tiver alguma dúvida ou sugestão, sinta-se à vontade para:
-
-- Abrir uma [issue](https://github.com/Jabirmussa/koshukuro/issues)
-- Enviar um email para [seu email]
-- Conectar no [LinkedIn](https://linkedin.com/in/seu-perfil)
-
----
 
 <div align="center">
 
-**⭐ Se este projeto ajudou você, considere dar uma estrela! ⭐**
+**Se este projeto ajudou você, considere dar uma estrela! ⭐**
 
 Made with ❤️ by [Jabirmussa](https://github.com/Jabirmussa)
 
